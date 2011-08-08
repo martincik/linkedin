@@ -53,7 +53,7 @@ module LinkedIn
           if options[:id]
             path += "id=#{options[:id]}"
           elsif options[:url]
-            path += "url=#{CGI.escape(options[:url])}"
+            path += "universal-name=#{options[:universal_name]}"
           else
             path += "~"
           end
